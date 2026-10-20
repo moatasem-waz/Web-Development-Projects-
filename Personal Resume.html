@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>السيرة الذاتية | أحمد محمد</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: #f2f4f8;
+      color: #263248;
+      font-family: Arial, Tahoma, sans-serif;
+      line-height: 1.8;
+    }
+
+    .resume {
+      width: 100%;
+      max-width: 850px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 14px 40px #17234414;
+    }
+
+    header {
+      padding: 36px;
+      background: #253a68;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0 0 5px;
+      font-size: 34px;
+    }
+
+    header p {
+      margin: 0;
+      color: #d7def0;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-top: 18px;
+      font-size: 14px;
+    }
+
+    .contact a {
+      color: #f4d28a;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 28px 36px;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      padding-bottom: 7px;
+      border-bottom: 2px solid #e8ebf2;
+      color: #253a68;
+      font-size: 21px;
+    }
+
+    .entry {
+      margin: 14px 0;
+    }
+
+    .entry h3 {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .meta {
+      margin: 2px 0 6px;
+      color: #70798a;
+      font-size: 14px;
+    }
+
+    .entry p {
+      margin: 5px 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skills li {
+      padding: 7px 12px;
+      border-radius: 20px;
+      background: #eef1fa;
+      color: #344b85;
+      font-size: 14px;
+    }
+
+    @media (max-width: 560px) {
+      body {
+        padding: 14px 10px;
+      }
+
+      header {
+        padding: 26px 22px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      main {
+        padding: 24px 22px;
+      }
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: white;
+      }
+
+      .resume {
+        max-width: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article class="resume">
+    <header>
+      <h1>أحمد محمد</h1>
+      <p>مصمم ومطور مواقع مبتدئ</p>
+
+      <div class="contact">
+        <span>الرياض، السعودية</span>
+        <a href="mailto:ahmed@example.com">ahmed@example.com</a>
+        <a href="tel:+966500000000">0500000000</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>نبذة شخصية</h2>
+        <p>
+          شخص طموح ومهتم بتصميم المواقع وتطويرها. أستمتع بتعلم التقنيات
+          الجديدة والعمل على مشاريع تساعدني على تطوير مهاراتي.
+        </p>
+      </section>
+
+      <section>
+        <h2>التعليم</h2>
+        <div class="entry">
+          <h3>دبلوم تقنية المعلومات</h3>
+          <p class="meta">كلية التقنية — 2023 إلى 2025</p>
+          <p>دراسة أساسيات البرمجة، قواعد البيانات، وتصميم صفحات الويب.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>الخبرة والمشاريع</h2>
+        <div class="entry">
+          <h3>مشروع موقع تعريفي</h3>
+          <p class="meta">مشروع شخصي — 2025</p>
+          <p>إنشاء صفحة تعريفية متجاوبة باستخدام HTML وCSS.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>المهارات</h2>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>تصميم صفحات الويب</li>
+          <li>العمل الجماعي</li>
+          <li>حل المشكلات</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>اللغات</h2>
+        <p>العربية: اللغة الأم</p>
+        <p>الإنجليزية: متوسط</p>
+      </section>
+    </main>
+  </article>
+</body>
+</html>
