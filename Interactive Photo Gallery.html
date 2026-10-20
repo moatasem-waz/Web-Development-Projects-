@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض الصور</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 40px 16px;
+      background: #f1f4f8;
+      color: #263248;
+      font-family: Arial, Tahoma, sans-serif;
+    }
+
+    .gallery {
+      max-width: 900px;
+      margin: auto;
+      padding: 28px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 12px 35px #17234412;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      text-align: center;
+      color: #334bc4;
+    }
+
+    .description {
+      margin: 0 0 25px;
+      color: #788397;
+      text-align: center;
+    }
+
+    .viewer {
+      margin-bottom: 16px;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #e8ecf3;
+    }
+
+    .viewer img {
+      display: block;
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+    }
+
+    .thumbnails {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .thumbnails a {
+      display: block;
+      overflow: hidden;
+      border: 3px solid transparent;
+      border-radius: 11px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .thumbnails a:hover,
+    .thumbnails a:focus {
+      border-color: #5268dc;
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .thumbnails img {
+      display: block;
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .caption {
+      margin: 17px 0 0;
+      color: #788397;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 12px;
+      }
+
+      .gallery {
+        padding: 18px;
+      }
+
+      .viewer img {
+        height: 280px;
+      }
+
+      .thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .thumbnails img {
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="gallery">
+    <h1>معرض الصور</h1>
+    <p class="description">اختر صورة مصغّرة لعرضها في المساحة الكبيرة.</p>
+
+    <div class="viewer">
+      <img
+        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+        alt="بحيرة بين الجبال">
+    </div>
+
+    <nav class="thumbnails" aria-label="صور المعرض">
+      <a href="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+        <img
+          src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=400&amp;q=75"
+          alt="بحيرة بين الجبال">
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=400&amp;q=75"
+          alt="منظر طبيعي أخضر">
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+        <img
+          src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&amp;fit=crop&amp;w=400&amp;q=75"
+          alt="طريق وسط الطبيعة">
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+        <img
+          src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&amp;fit&amp;w=400&amp;q=75"
+          alt="شروق الشمس">
+      </a>
+    </nav>
+
+    <p class="caption">اضغط على صورة مصغّرة لفتح الصورة بالحجم الكبير.</p>
+  </main>
+</body>
+</html>
