@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قائمة مهامي</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 40px 16px;
+      background: #f1f4f9;
+      color: #263248;
+      font-family: Arial, Tahoma, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 30px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(27, 41, 72, 0.1);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: #334bc4;
+      font-size: 30px;
+    }
+
+    .description {
+      margin: 0 0 26px;
+      color: #788397;
+      line-height: 1.7;
+    }
+
+    .form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .form input {
+      flex: 1;
+      min-width: 0;
+      padding: 13px 14px;
+      border: 1px solid #dce2ec;
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .form input:focus {
+      border-color: #5268dc;
+      box-shadow: 0 0 0 3px rgba(82, 104, 220, 0.13);
+    }
+
+    .form button {
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 10px;
+      background: #5268dc;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form button:hover {
+      background: #4055c5;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 19px;
+    }
+
+    .tasks {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tasks li {
+      margin-bottom: 10px;
+    }
+
+    .task {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px;
+      border: 1px solid #edf0f5;
+      border-radius: 11px;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .task:hover {
+      border-color: #cbd3f5;
+      background: #f8f9ff;
+    }
+
+    .task input {
+      width: 19px;
+      height: 19px;
+      margin: 0;
+      accent-color: #5268dc;
+      cursor: pointer;
+    }
+
+    .task span {
+      line-height: 1.5;
+    }
+
+    .task input:checked + span {
+      color: #929aaa;
+      text-decoration: line-through;
+    }
+
+    .note {
+      margin: 20px 0 0;
+      padding: 12px;
+      border-radius: 9px;
+      background: #fff8e7;
+      color: #806325;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 12px;
+      }
+
+      .container {
+        padding: 22px 17px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .form {
+        flex-direction: column;
+      }
+
+      .form button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>قائمة مهامي</h1>
+    <p class="description">نظّم يومك وحدد المهام التي أنجزتها.</p>
+
+    <form class="form">
+      <input type="text" placeholder="اكتب مهمة جديدة..." aria-label="مهمة جديدة">
+      <button type="button">إضافة</button>
+    </form>
+
+    <h2>المهام</h2>
+
+    <ul class="tasks">
+      <li>
+        <label class="task">
+          <input type="checkbox">
+          <span>قراءة كتاب لمدة 20 دقيقة</span>
+        </label>
+      </li>
+
+      <li>
+        <label class="task">
+          <input type="checkbox">
+          <span>إنجاز الواجب أو العمل اليومي</span>
+        </label>
+      </li>
+
+      <li>
+        <label class="task">
+          <input type="checkbox">
+          <span>المشي أو ممارسة الرياضة</span>
+        </label>
+      </li>
+
+      <li>
+        <label class="task">
+          <input type="checkbox">
+          <span>ترتيب المكتب</span>
+        </label>
+      </li>
+    </ul>
+
+    <p class="note">
+      هذه نسخة HTML وCSS فقط؛ يمكن تحديد المهام الموجودة. إضافة مهام جديدة وحفظها تلقائيًا يحتاجان إلى JavaScript.
+    </p>
+  </main>
+</body>
+</html>
