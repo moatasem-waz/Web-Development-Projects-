@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مطعم المذاق</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #fffaf3;
+      color: #302b27;
+      font-family: Arial, Tahoma, sans-serif;
+    }
+
+    header {
+      padding: 55px 20px;
+      background: #8a3d24;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: 40px;
+    }
+
+    header p {
+      margin: 0;
+      color: #ffe8d6;
+      line-height: 1.8;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 35px auto;
+    }
+
+    h2 {
+      margin: 0 0 20px;
+      color: #8a3d24;
+      text-align: center;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px;
+      border: 1px solid #f0dfcf;
+      border-radius: 14px;
+      background: white;
+      box-shadow: 0 5px 15px #5c32100c;
+    }
+
+    .item h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .item p {
+      margin: 0;
+      color: #77716b;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .price {
+      flex: 0 0 auto;
+      color: #8a3d24;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .contact {
+      margin-top: 26px;
+      padding: 20px;
+      border-radius: 14px;
+      background: #f5eadf;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .contact a {
+      color: #8a3d24;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 18px;
+      color: #77716b;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 40px 16px;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      .menu {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>مطعم المذاق</h1>
+    <p>أطباق طازجة ونكهات لذيذة تُحضّر بكل عناية.</p>
+  </header>
+
+  <main>
+    <h2>قائمة الطعام</h2>
+
+    <section class="menu" aria-label="أطباق المطعم">
+      <article class="item">
+        <div>
+          <h3>برغر اللحم</h3>
+          <p>لحم مشوي، خس، طماطم، وجبنة.</p>
+        </div>
+        <span class="price">٣٥ ريالًا</span>
+      </article>
+
+      <article class="item">
+        <div>
+          <h3>بيتزا الخضار</h3>
+          <p>خضروات طازجة وجبنة موزاريلا.</p>
+        </div>
+        <span class="price">٤٢ ريالًا</span>
+      </article>
+
+      <article class="item">
+        <div>
+          <h3>سلطة سيزر</h3>
+          <p>خس طازج، خبز محمص، وصلصة سيزر.</p>
+        </div>
+        <span class="price">٢٥ ريالًا</span>
+      </article>
+
+      <article class="item">
+        <div>
+          <h3>باستا ألفريدو</h3>
+          <p>باستا مع صلصة كريمية وجبنة.</p>
+        </div>
+        <span class="price">٣٨ ريالًا</span>
+      </article>
+
+      <article class="item">
+        <div>
+          <h3>عصير برتقال</h3>
+          <p>عصير برتقال طازج.</p>
+        </div>
+        <span class="price">١٢ ريالًا</span>
+      </article>
+
+      <article class="item">
+        <div>
+          <h3>تشيز كيك</h3>
+          <p>قطعة تشيز كيك مع صلصة الفراولة.</p>
+        </div>
+        <span class="price">١٨ ريالًا</span>
+      </article>
+    </section>
+
+    <section class="contact">
+      <strong>للطلب أو الاستفسار</strong><br>
+      <a href="tel:+966500000000">اتصل بنا: 0500000000</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 مطعم المذاق
+  </footer>
+</body>
+</html>
